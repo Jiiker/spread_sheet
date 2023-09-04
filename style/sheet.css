@@ -2,8 +2,7 @@
   display: grid;
 }
 
-
-.row-header {
+#row-header {
   text-align: center;
 }
 

@@ -7,18 +7,17 @@ function makeSheet(N) {
       const cell = document.createElement("input");
       cell.type = "text";
       sheetContainer.appendChild(cell);
+      cell.className = "cell-box";
 
       cell.style.gridColumn = j + 1;
       cell.style.gridRow = i + 1;
 
-      cell.className = "row-header";
-      cell.id = "col-header";
-      if (i != 0)
-        cell.className = String.fromCharCode(64 + j);
-      if (j != 0)
-        cell.id = `${i}`;
+      if (i == 0 && j != 0)
+        cell.id = "row-header";
+      if (j == 0 && i != 0)
+        cell.id = "col-header";
       
-      if (cell.className == "row-header" && j != 0)
+      if (cell.id == "row-header" && j != 0)
         cell.placeholder = String.fromCharCode(64 + j);
       if (cell.id == "col-header" && i != 0)
         cell.placeholder = `${i}`;
