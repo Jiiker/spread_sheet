@@ -1,0 +1,12 @@
+.sheet-container {
+  display: grid;
+}
+
+
+.row-header {
+  text-align: center;
+}
+
+#col-header {
+  text-align: center;
+}
