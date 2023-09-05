@@ -1,0 +1,16 @@
+.export-btn { 
+  width: 150px;
+  height: 35px;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: rgb(35, 155, 35);
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  opacity: 0.8;
+}

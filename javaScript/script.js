@@ -1,5 +1,5 @@
 const sheetContainer = document.querySelector(".sheet-container");
-const N = 4;
+const N = 10;
 
 function makeSheet(N) {
   for (let i = 0; i < N; i++) {
@@ -12,9 +12,9 @@ function makeSheet(N) {
       cell.style.gridColumn = j + 1;
       cell.style.gridRow = i + 1;
 
-      if (i == 0 && j != 0)
+      if (i == 0)
         cell.id = "row-header";
-      if (j == 0 && i != 0)
+      if (j == 0)
         cell.id = "col-header";
       
       if (cell.id == "row-header" && j != 0)

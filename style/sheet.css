@@ -1,11 +1,60 @@
 .sheet-container {
   display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  grid-auto-rows: 40px;
+  grid-auto-columns: 100px;
+
+  
+}
+
+.selected-cell {
+  font-weight: bold;
+}
+
+.cell-box {
+  margin-left: -1px;
+  margin-top: -1px;
+
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(180, 180, 180, 0.7);
+}
+
+.cell-box:focus {
+  outline: none;
 }
 
 #row-header {
   text-align: center;
+
+  font-weight: bold;
+  background-color: rgb(185, 185, 185, 0.7);
+}
+
+#row-header::placeholder {
+  color: rgb(66, 65, 65, 0.9);
 }
 
 #col-header {
   text-align: center;
+
+  font-weight: bold;
+  background-color: rgb(185, 185, 185, 0.7);
+}
+
+#col-header::placeholder {
+  color: rgb(66, 65, 65, 0.9);
+}
+
+#selected {
+  text-align: center;
+
+  font-weight: bold;
+  background-color: rgba(135, 210, 253, 0.7);
+}
+
+#selected::placeholder {
+  color : white;
 }
