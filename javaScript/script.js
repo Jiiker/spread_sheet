@@ -8,6 +8,7 @@ function makeSheet(N) {
       cell.type = "text";
       sheetContainer.appendChild(cell);
       cell.className = "cell-box";
+      cell.id = "input-cell";
 
       cell.style.gridColumn = j + 1;
       cell.style.gridRow = i + 1;
