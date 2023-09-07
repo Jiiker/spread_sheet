@@ -15,7 +15,7 @@ function makeSpreadsheet() {
       inner_str += inputCell[index].value;
     }
     if (row != 0)
-      outer_str += '\n'
+      outer_str += '\n';
     outer_str += inner_str;
   }
   arr.push(outer_str);
